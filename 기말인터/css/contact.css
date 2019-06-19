@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700&display=swap&subset=latin-ext');
+body,
+input,
+textarea {
+	font-family: 'Titillium Web', sans-serif; 
+  font-size: 16px;
+  
+}
+body {
+  background-color: white;
+}
+h1 {
+  text-align: center;
+}
+label {
+	display: block;
+	font-weight: 600;
+	margin: 0 0 8px 0;
+	min-width: 50px;
+}
+input,
+textarea {
+  border: 1px solid #ccc;
+	padding: 4px 0;
+	width: 100%;
+	-webkit-appearance: none;
+}
+input[type="submit"] {
+	background:black;
+	border: 0;
+	color: #fff;
+	padding: 8px 16px;
+	transition: 0.2s;
+}
+input[type="submit"]:not(:disabled):hover {
+	background: black;
+}
+input[type="submit"]:not(:disabled):active {
+  background:black;
+  
+}
+input[disabled] {
+	opacity: 0.5;
+}
+.container {
+	background: #fff;
+	box-shadow: 0 2px 4px #888;
+	margin: auto;
+	padding: 16px;
+  max-width: 600px;
+  margin-top: 80px;
+}
+.form-group {
+	margin-bottom: 16px;
+}
+input.ng-invalid.ng-dirty,
+textarea.ng-invalid.ng-dirty {
+	border-color: red;
+	box-shadow: 0 0 4px red;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  margin:             0px;
+  padding:            0px;
+  list-style:         none;
+}
+
+
+a, a:visited {
+	text-decoration: 	none;
+}
+
+
+/* WIDTH SETTING */
+.nav-hold {
+	width: 97%;
+	max-width: 1800px;
+	margin: 0 auto;
+}
+
+.nav-bar {
+	width: 100%;
+    background: white;
+    height: 50px;
+}
+
+.nav-hold {
+	overflow: hidden;
+}
+
+.nav-logo {
+	float: 		left;
+	display: 	block;
+    color: 		black;
+    padding: 13px;
+    font-family: 'Titillium Web', sans-serif; 
+    font-weight: 600;
+}
+
+.nav-list {
+	float: right;
+}
+
+.nav-list li {
+    float: left;
+    font-family: 'Titillium Web', sans-serif; 
+    font-weight: 300;
+    
+}
+
+.nav-list li a {
+	display: 	block;
+	padding: 	13px 10px;
+	color: 		black;
+}
+
+.nav-menu {
+	color: 		black;
+	float: 		right;
+	padding: 	20px 10px;
+	display: 	none;
+	cursor: 	pointer;
+}
+
+@media (max-width: 700px) {
+	.nav-menu {
+		display: 	block;
+	}
+
+	.nav-list {
+		/*float: left;*/
+		width: 		100%;
+		height: 	0;
+	}
+
+	.nav-open {
+		height: auto;
+	}
+
+	.nav-list li {
+		width: 		100%;
+	}
+  
+  .nav-list li a {
+    padding: 	10px 10px;
+  }
+
+}
